@@ -1,18 +1,17 @@
 Dwayne's notes...
 
-Did not manage to find a way to render the react from the asynchronous fetch made towards the backend. I did see it was possible to make a synchronous request, but it wouldn't serve the purpose of demonstrating coding knowledge.
-Added swagger in order to make it more easily testable. This allowed me to ensure proper operation of the API prior to trying to connect more components; namely the client-app.
-I would likely have structured the react differently, but then again I would have to hit the documentation before making a qualified guess.
-I added a couple of extra projects that allowed me to make changes more easily along the way; namely models and interfaces. That way, I could maintain the hierarchy if I decided to restructure along the way (X -> Interfaces -> Models).
-A few things to add for scalability:
--- In a real-world scenario, the API's would have been as thin as possible. In extreme volume-cases, the communication would be totally asynchronous to allow for more efficient processing
--- Services would likely be split between API and "processing" as well as clean-up of various sorts. All event/message-driven.
--- A login via username/pass/2FA for users which would allow to differentiate and kill requests that were not made by authenticated users.
--- A certificate and/or openauth solution would be for whitelabel partners to validate the source.
--- The asynchronous info-feedback could be facilitated by websockets, gRPC, a custom sockets solution (essentially anything that maintains a socket connection). I don't know if GraphQL can do this. For pushing info to a whitelabel partner, a webhook solution would be more suitable.
+- Did not manage to find a way to render the react from the asynchronous fetch made towards the backend. I did see it was possible to make a synchronous request, but it wouldn't serve the purpose of demonstrating coding knowledge.
+- Added swagger in order to make it more easily testable. This allowed me to ensure proper operation of the API prior to trying to connect more components; namely the client-app.
+- I would likely have structured the react differently, but then again I would have to hit the documentation before making a qualified guess.
+- I added a couple of extra projects that allowed me to make changes more easily along the way; namely models and interfaces. That way, I could maintain the hierarchy if I decided to restructure along the way (X -> Interfaces -> Models).
+- A few things to add for scalability:
+  - In a real-world scenario, the API's would have been as thin as possible. In extreme volume-cases, the communication would be totally asynchronous to allow for more efficient processing
+  - Services would likely be split between API and "processing" as well as clean-up of various sorts. All event/message-driven.
+  - A login via username/pass/2FA for users which would allow to differentiate and kill requests that were not made by authenticated users.
+  - A certificate and/or openauth solution would be for whitelabel partners to validate the source.
+  - The asynchronous info-feedback could be facilitated by websockets, gRPC, a custom sockets solution (essentially anything that maintains a socket connection). I don't know if GraphQL can do this. For pushing info to a whitelabel partner, a webhook solution would be more suitable.
+
 I apologize for not being able to look further into it. I would love to learn more about react as I can already say it's prettier than angular. React has changed a lot since I first glanced over it 👍
-
-
 
 --------------------------------------
 # e-conomic & sproom hiring task
