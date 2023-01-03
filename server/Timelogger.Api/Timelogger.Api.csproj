@@ -12,9 +12,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Timelogger.Interfaces\Timelogger.Interfaces.csproj" />
-    <ProjectReference Include="..\Timelogger.Models\Timelogger.Models.csproj" />
-    <ProjectReference Include="..\Timelogger\Timelogger.csproj" />
+    <ProjectReference Include="..\Timelogger.Core.Events\Timelogger.Core.Events.csproj" />
+    <ProjectReference Include="..\Timelogger.Core.Interfaces\Timelogger.Core.Interfaces.csproj" />
+    <ProjectReference Include="..\Timelogger.Core.Models\Timelogger.Core.Models.csproj" />
+    <ProjectReference Include="..\Timelogger.Infrastructure.HealthMonitor\Timelogger.Infrastructure.HealthMonitor.csproj" />
+    <ProjectReference Include="..\Timelogger.Infrastructure.Logging\Timelogger.Infrastructure.Logging.csproj" />
+    <ProjectReference Include="..\Timelogger.Infrastructure.LoginManager\Timelogger.Infrastructure.LoginManager.csproj" />
+    <ProjectReference Include="..\Timelogger.Infrastructure.MessageBus\Timelogger.Infrastructure.MessageBus.csproj" />
+    <ProjectReference Include="..\Timelogger.Infrastructure.Persistence\Timelogger.Infrastructure.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
