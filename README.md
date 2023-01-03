@@ -1,3 +1,8 @@
+Dwaynes's new notes..
+Added means to login. After logging in successfully (username=capser, password=password), it will return a token. That value has to go into the header as a bearer token. It will then derive the caller based on the token and determine access accordingly. The login is made asynhronously via events, but with a wait-handle to ensure it can run in a single call without expending unnecessary resources.
+
+Also added a unit test. It shows my general style of testing. I added a class I wrote for my own projects that saves me time in terms of writing boiler plate code.
+
 Dwayne's notes...
 
 - Did not manage to find a way to render the react from the asynchronous fetch made towards the backend. I did see it was possible to make a synchronous request, but it wouldn't serve the purpose of demonstrating coding knowledge.
